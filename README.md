@@ -10,6 +10,7 @@ This is a starter repo as an example to configure the project with:
 - [ESLint](https://eslint.org/docs/user-guide/configuring/)
 - [ESLint Plugin: Testing-Library](https://testing-library.com/docs/ecosystem-eslint-plugin-testing-library)
 - [ESLint Plugin: Jest-DOM](https://github.com/testing-library/eslint-plugin-jest-dom)
+- Internally served font example.
 - Misc. structural best practices.
 - Misc. quality of life and minor opinions.
 
