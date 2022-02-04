@@ -14,9 +14,13 @@
         "baseUrl": ".",
         "paths": {
             "~/*": ["./app/*"],
+            "~constants": ["./app/__constants__/index.ts"],
+            "~models": ["./app/__models__/index.ts"],
+            "~utils": ["./app/__utils__/index.ts"],
             "~routes/*": ["./app/routes/*"],
             "~styles/*": ["./app/styles/*"],
             "~components": ["./app/components/index.ts"],
+            "~hooks": ["./app/hooks/index.ts"],
             "~public/*": ["./app/public/*"]
         },
         // Remix takes care of building everything in `remix build`.
