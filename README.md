@@ -81,4 +81,5 @@ yarn install
 
 ### Additional / TODO
 
-- SEO: sitemap generate lib and script on postbuild
+- SEO: sitemap generate lib and script on `postbuild`.
+- SASS/SCSS: It is possible to setup SASS/SCSS with this project, however with CSS variables and other modern APIs, vanilla CSS is usually enough. Reference [Best practices](https://remix.run/docs/en/v1/guides/styling#css-ecosystem-and-performance) & [Setting up SASS with Remix](https://devtools.tech/blog/setting-up-sass-with-remix-run---rid---lXDyMjDSdDZDXxNcJ2ep)
