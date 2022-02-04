@@ -1,6 +1,6 @@
 # Welcome to Remix!
 
-This is a starter repo as an example to configure the project with 
+This is a starter repo as an example to configure the project with:
 - TypeScript
 - Prettier
 - Jest
@@ -11,8 +11,15 @@ This is a starter repo as an example to configure the project with
 - [ESLint Plugin: Testing-Library](https://testing-library.com/docs/ecosystem-eslint-plugin-testing-library)
 - [ESLint Plugin: Jest-DOM](https://github.com/testing-library/eslint-plugin-jest-dom)
 - Misc. structural best practices.
+- Misc. quality of life and minor opinions.
 
 If you know the target server (Netlify or Vercel for example), then see [DIY](#diy).
+
+**Remember to update after cloning**
+
+```sh
+yarn upgrade-interactive --latest
+```
 
 - [Remix Docs](https://remix.run/docs)
 
