@@ -1,13 +1,34 @@
 # Welcome to Remix!
 
+This is a starter repo as an example to configure the project with 
+- TypeScript
+- ESLint
+- Prettier
+- Jest
+- React-Testing-Library
+- Misc. structural best practices.
+
+If you know the target server (Netlify or Vercel for example), then see [DIY](#diy).
+
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
 
 From your terminal:
 
+### Start development server
 ```sh
-npm run dev
+yarn dev
+```
+
+### Lint files
+```sh
+yarn lint
+```
+
+### Format files
+```sh
+yarn format
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
@@ -17,13 +38,13 @@ This starts your app in development mode, rebuilding assets on file changes.
 First, build your app for production:
 
 ```sh
-npm run build
+yarn build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+yarn start
 ```
 
 Now you'll need to pick a host to deploy it to.
@@ -50,4 +71,6 @@ cd my-new-remix-app
 rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
+# copy over the packet.json and 
+yarn install
 ```
