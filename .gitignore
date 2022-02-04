@@ -1,8 +1,29 @@
 # Dependencies
 node_modules
 
+# Typescript
+*.tsbuildinfo
+
 # Compile artifacts
 /.cache
 /build
 /public/build
 .env
+
+# Testing
+/coverage
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+.DS_Store
+*.pem

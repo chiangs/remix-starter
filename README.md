@@ -2,10 +2,14 @@
 
 This is a starter repo as an example to configure the project with 
 - TypeScript
-- ESLint
 - Prettier
 - Jest
-- React-Testing-Library
+- [Jest-DOM](https://github.com/testing-library/jest-dom)
+- [React-Testing-Library](https://testing-library.com/docs)
+- [React-Testing-Library User-Event](https://github.com/testing-library/user-event)
+- [ESLint](https://eslint.org/docs/user-guide/configuring/)
+- [ESLint Plugin: Testing-Library](https://testing-library.com/docs/ecosystem-eslint-plugin-testing-library)
+- [ESLint Plugin: Jest-DOM](https://github.com/testing-library/eslint-plugin-jest-dom)
 - Misc. structural best practices.
 
 If you know the target server (Netlify or Vercel for example), then see [DIY](#diy).
@@ -74,3 +78,7 @@ cp -R ../my-old-remix-app/app app
 # copy over the packet.json and 
 yarn install
 ```
+
+### Additional / TODO
+
+- SEO: sitemap generate lib and script on postbuild
