@@ -1,0 +1,5 @@
+/* The component style is inserted here. */
+[data-primary-button] {
+    background: blue;
+    color: white;
+}

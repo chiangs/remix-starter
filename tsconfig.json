@@ -14,8 +14,10 @@
         "baseUrl": ".",
         "paths": {
             "~/*": ["./app/*"],
-            "@routes": ["./routes/*"],
-            "@public": ["./public/*"]
+            "~routes/*": ["./app/routes/*"],
+            "~styles/*": ["./app/styles/*"],
+            "~components": ["./app/components/index.ts"],
+            "~public/*": ["./app/public/*"]
         },
         // Remix takes care of building everything in `remix build`.
         "noEmit": true

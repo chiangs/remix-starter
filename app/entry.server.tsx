@@ -8,6 +8,7 @@ export default function handleRequest(
     responseHeaders: Headers,
     remixContext: EntryContext,
 ) {
+    /* eslint-disable testing-library/render-result-naming-convention */
     const markup = renderToString(<RemixServer context={remixContext} url={request.url} />);
 
     responseHeaders.set('Content-Type', 'text/html');

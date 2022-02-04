@@ -1,7 +1,7 @@
 // Testing library
 import { render, screen } from '@testing-library/react';
 // App
-import Index from 'app/routes';
+import Index from '~/routes/index';
 
 describe('Home page', () => {
     it('renders a heading', () => {
