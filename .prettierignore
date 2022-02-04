@@ -1,4 +1,4 @@
-# Dependencies
+# Ignore dependencies
 node_modules
 
 # Compile artifacts
@@ -6,3 +6,6 @@ node_modules
 /build
 /public/build
 .env
+
+# Ignore all HTML files
+*.html
