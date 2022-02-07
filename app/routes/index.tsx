@@ -27,7 +27,7 @@ export default function Index() {
                 <ButtonPrimary {...buttonPrimaryProps}>{buttonPrimarLabel}</ButtonPrimary>
                 <ul>
                     <li>
-                        <Link prefetch="intent" to="example-page">
+                        <Link prefetch="intent" to="/example-page">
                             Go to example route
                         </Link>
                     </li>
