@@ -1,6 +1,5 @@
 // Remix
 import { Link } from 'remix';
-
 // Styles
 import styles from '~styles/index.css';
 // Components
@@ -27,6 +26,9 @@ export default function Index() {
                 <h1>Welcome to Remix</h1>
                 <ButtonPrimary {...buttonPrimaryProps}>{buttonPrimarLabel}</ButtonPrimary>
                 <ul>
+                    <li>
+                        <Link to="example-page">Go to example route</Link>
+                    </li>
                     <li>
                         <a
                             target="_blank"
