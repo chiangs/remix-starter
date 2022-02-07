@@ -1,3 +1,6 @@
+// Remix
+import { Link } from 'remix';
+
 // Styles
 import styles from '~styles/index.css';
 // Components
