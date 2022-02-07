@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
         'twitter:title': 'Remix startup',
         'twitter:description': description,
     };
-    return { title: 'New Remix App', description, keywords };
+    return { title: 'New Remix App', description, keywords, ...twitter };
 };
 
 export const links: LinksFunction = () => {
