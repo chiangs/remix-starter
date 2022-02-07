@@ -1,5 +1,24 @@
 // Remix
+import type { LinksFunction, MetaFunction } from 'remix';
 import { Link, Outlet } from 'remix';
+// Styles
+import stylesUrl from '~styles/example-page.css';
+
+export const links: LinksFunction = () => {
+    return [
+        {
+            rel: 'stylesheet',
+            href: stylesUrl,
+        },
+    ];
+};
+
+export const meta: MetaFunction = () => {
+    return {
+        title: 'Example page',
+        description: 'Route with error boundaries example.',
+    };
+};
 
 const goBack = <Link to="/">Container nav GoBack</Link>;
 

@@ -11,6 +11,8 @@ This is a starter repo as an example to configure the project with:
 - [ESLint Plugin: Testing-Library](https://testing-library.com/docs/ecosystem-eslint-plugin-testing-library)
 - [ESLint Plugin: Jest-DOM](https://github.com/testing-library/eslint-plugin-jest-dom)
 - Internally served font example.
+- Error boundaries for the root and a main route example.
+- SEO with Meta tags.
 - Misc. structural best practices.
 - Misc. quality of life and minor opinions.
 

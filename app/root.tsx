@@ -7,7 +7,17 @@ import globablStylesUrl from '~styles/global.css';
 import rootStylesUrl from '~styles/index.css';
 
 export const meta: MetaFunction = () => {
-    return { title: 'New Remix App' };
+    const description = `Remix startup example`;
+    const keywords = `Remix, startup, example`;
+    const twitter = {
+        'twitter:image': 'https://www.webstep.no/wp-content/uploads/2019/08/WEBSTEP_logo.png',
+        'twitter:card': 'summary_large_image',
+        'twitter:creator': '@chiangse',
+        'twitter:site': '@chiangse',
+        'twitter:title': 'Remix startup',
+        'twitter:description': description,
+    };
+    return { title: 'New Remix App', description, keywords };
 };
 
 export const links: LinksFunction = () => {
