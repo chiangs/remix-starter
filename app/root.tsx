@@ -1,5 +1,5 @@
 // Remix
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from 'remix';
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useCatch } from 'remix';
 import type { MetaFunction, LinksFunction } from 'remix';
 // Styles
 import normalizeStylesUrl from '~styles/__normalize__.css';
@@ -29,7 +29,7 @@ export const links: LinksFunction = () => {
 
 const Document = ({
     children,
-    title = `Remix: So great, it's funny!`,
+    title = `Remix!`,
 }: {
     children: React.ReactNode;
     title?: string;
@@ -56,6 +56,19 @@ const App = () => (
         <Outlet />
     </Document>
 );
+
+export const CatchBoundary = () => {
+    const caught = useCatch();
+    return (
+        <Document title={`${caught.status} ${caught.statusText}`}>
+            <div className="error-container">
+                <h1>
+                    {caught.status} {caught.statusText}
+                </h1>
+            </div>
+        </Document>
+    );
+};
 
 /**
  * Remember to update the title
