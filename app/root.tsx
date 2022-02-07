@@ -27,21 +27,46 @@ export const links: LinksFunction = () => {
     ];
 };
 
-export default function App() {
-    return (
-        <html lang="en">
-            <head>
-                <meta charSet="utf-8" />
-                <meta name="viewport" content="width=device-width,initial-scale=1" />
-                <Meta />
-                <Links />
-            </head>
-            <body>
-                <Outlet />
-                <ScrollRestoration />
-                <Scripts />
-                {process.env.NODE_ENV === 'development' && <LiveReload />}
-            </body>
-        </html>
-    );
-}
+const Document = ({
+    children,
+    title = `Remix: So great, it's funny!`,
+}: {
+    children: React.ReactNode;
+    title?: string;
+}): JSX.Element => (
+    <html lang="en">
+        <head>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width,initial-scale=1" />
+            <Meta />
+            <title>{title}</title>
+            <Links />
+        </head>
+        <body>
+            {children}
+            <ScrollRestoration />
+            <Scripts />
+            {process.env.NODE_ENV === 'development' && <LiveReload />}
+        </body>
+    </html>
+);
+
+const App = () => (
+    <Document>
+        <Outlet />
+    </Document>
+);
+
+/**
+ * Remember to update the title
+ */
+export const ErrorBoundary = ({ error }: { error: Error }) => (
+    <Document title="Uh-oh!">
+        <div className="error-container">
+            <h1>App Error</h1>
+            <pre>{error.message}</pre>
+        </div>
+    </Document>
+);
+
+export default App;
