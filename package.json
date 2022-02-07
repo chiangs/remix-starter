@@ -10,7 +10,8 @@
         "format": "prettier --write app",
         "postinstall": "remix setup node",
         "start": "remix-serve build",
-        "test": "jest --watch"
+        "test": "jest --watch",
+        "test-pr": "jest"
     },
     "dependencies": {
         "@remix-run/react": "^1.1.3",
