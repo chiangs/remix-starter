@@ -63,7 +63,15 @@ const Document = ({
 
 const App = () => (
     <Document>
-        <Outlet />
+        <header id="header" className="header">
+            Header / Main navigation
+        </header>
+        <main id="main" className="main">
+            <Outlet />
+        </main>
+        <footer id="footer" className="footer">
+            Footer
+        </footer>
     </Document>
 );
 

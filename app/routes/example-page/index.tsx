@@ -58,7 +58,7 @@ export const ErrorBoundary = ({ error }: { error: Error }) => {
 const ExampleIndex = () => {
     const data = useLoaderData<LoaderData>();
     return (
-        <section className="container">
+        <section className="container--page--route">
             <h2>Example Page</h2>
             <p>This is an example.</p>
             <p>{data}</p>

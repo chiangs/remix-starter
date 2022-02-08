@@ -24,7 +24,7 @@ const goBack = <Link to="/">Container nav GoBack</Link>;
 
 const ExamplePage = () => {
     return (
-        <article className="container">
+        <article className="container--page">
             <h1>Example Page</h1>
             <p>This is an example of another route.</p>
             {goBack}
