@@ -1,11 +1,7 @@
 // React
 import React from 'react';
 // Extended Button
-import { Button, ButtonProps, links as buttonLinks } from '../Button';
-// Styles
-import styles from './styles.css';
-
-export const links = () => [...buttonLinks(), { rel: 'stylesheet', href: styles }];
+import { Button, ButtonProps } from '../Button';
 
 export interface ButtonPrimaryProps extends ButtonProps {
     disabled?: false;
@@ -20,5 +16,5 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = (props: ButtonPrimary
         disabled: false,
         type: 'button',
     };
-    return <Button {...defaultProps} />;
+    return <Button className="button" {...defaultProps} />;
 };

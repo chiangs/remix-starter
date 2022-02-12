@@ -10,6 +10,7 @@ This is a starter repo as an example to configure the project with:
 - [ESLint](https://eslint.org/docs/user-guide/configuring/)
 - [ESLint Plugin: Testing-Library](https://testing-library.com/docs/ecosystem-eslint-plugin-testing-library)
 - [ESLint Plugin: Jest-DOM](https://github.com/testing-library/eslint-plugin-jest-dom)
+- [Alias-HQ](https://github.com/davestewart/alias-hq).
 - Internally served font example.
 - Error boundaries for the root and a main route example.
 - SEO with Meta tags.
@@ -25,6 +26,21 @@ yarn upgrade-interactive --latest
 ```
 
 - [Remix Docs](https://remix.run/docs)
+
+<!-- TOC -->
+
+- [Welcome to Remix!](#welcome-to-remix)
+  - [Development](#development)
+    - [Start development server](#start-development-server)
+    - [Lint files](#lint-files)
+    - [Format files](#format-files)
+    - [Test](#test)
+  - [Deployment](#deployment)
+    - [DIY](#diy)
+    - [Using a Template](#using-a-template)
+    - [Additional / TODO](#additional--todo)
+
+<!-- /TOC -->
 
 ## Development
 
@@ -43,6 +59,20 @@ yarn lint
 ### Format files
 ```sh
 yarn format
+```
+
+### Test
+
+Remix uses ESbuild and this project makes use jest.config as a module hence the `*.msj` file extension.
+File path aliases are generated via `ts.config` using a library called `alias-hq`.
+
+```sh
+yarn test
+```
+To run alias-hq after updating the project structure for your purposes:
+
+```sh
+yarn alias-hq
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
