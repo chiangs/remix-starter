@@ -121,6 +121,8 @@ yarn install
 
 ### Additional / TODO
 
+  ***Note on running tests:*** Tests will break on routes using useLoaderData. This repo is waiting on an official example from Kent C. Dodds.
+  
 - SASS/SCSS: It is possible to setup SASS/SCSS with this project, however with CSS variables and other modern APIs, vanilla CSS is usually enough. Reference [Best practices](https://remix.run/docs/en/v1/guides/styling#css-ecosystem-and-performance) & [Setting up SASS with Remix](https://devtools.tech/blog/setting-up-sass-with-remix-run---rid---lXDyMjDSdDZDXxNcJ2ep)
 - [Optimistic UI](https://remix.run/docs/en/v1.1.3/guides/optimistic-ui). Remix can help you build optimistic UI with useTransition and useFetcher.
 - SEO (sitemap). At the time of writing this, there is no native Remix method of generating a sitemap. There is ongoing discussion and potential options for current use [here](https://github.com/remix-run/remix/issues/741).
